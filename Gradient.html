@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gradient</title>
+    <style>
+      #something {
+        height: 500px;
+        width: 800px;
+        background-image: linear-gradient(
+          to bottom,
+          red,
+          yellow,
+          green,
+          blue,
+          pink,
+          purple
+        );
+      }
+      #cool {
+        height: 500px;
+        width: 800px;
+        background-image: radial-gradient(
+          circle,
+          red,
+          brown,
+          yellow,
+          green,
+          darkblue
+        );
+      }
+      @keyframes anime {
+        0% {
+          background-color: red;
+        }
+        25% {
+          background-color: green;
+        }
+        50% {
+          background-color: yellow;
+        }
+        75% {
+          background-color: blue;
+        }
+        100% {
+          background-color: purple;
+        }
+      }
+      #haha {
+        width: 200px;
+        height: 200px;
+        animation-name: anime;
+        animation-duration: 5s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="something">
+      <p>This is a demonstration of the gradient</p>
+    </div>
+    <div id="cool">
+      <p>This is another div with gradient background</p>
+    </div>
+    <div id="haha"></div>
+  </body>
+</html>
