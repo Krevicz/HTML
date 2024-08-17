@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #linear {
+        height: 500px;
+        width: 800px;
+        background-image: linear-gradient(to bottom, red, blue, yellow, green);
+      }
+
+      #radial {
+        height: 500px;
+        width: 800px;
+        background-image: radial-gradient(circle, beige, aqua, purple, pink);
+      }
+      #anime {
+        height: 500px;
+        width: 800px;
+        animation-duration: 5s;
+        animation-name: animation;
+      }
+      @keyframes animation {
+        0% {
+          background-color: aliceblue;
+        }
+        10% {
+          background-color: green;
+        }
+        50% {
+          background-color: blue;
+        }
+        80% {
+          background-color: aquamarine;
+        }
+        100% {
+          background-color: yellow;
+        }
+      }
+      #backgroundcolour {
+        background-color: aqua;
+      }
+      body {
+        background-image: url("https://images.squarespace-cdn.com/content/v1/62015f66f840ef671da14ae7/4161edfa-ebba-4c13-90a4-90383f26260e/Photographing-NYC-skyline.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+      }
+    </style>
+    <title>Background Effects</title>
+  </head>
+  <body>
+    <center>
+      <h1>
+        Background Effect showcasing CSS properties which change the background,
+        add a gradient that allows colours to be shown in another way and add an
+        animation
+      </h1>
+    </center>
+    <div id="linear"></div>
+    <div id="radial"></div>
+    <div id="anime"></div>
+    <div id="backgroundcolour">
+      <p>
+        The past 3 div tags showcased the gradient backgrounds and an animation.
+        This div tag will show how you cam change background colour.
+      </p>
+    </div>
+  </body>
+</html>
