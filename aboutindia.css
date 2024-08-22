@@ -1,0 +1,20 @@
+h1 {
+  color: orange;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: underline;
+  text-shadow: 2px 5px 8px orangered;
+  box-shadow: 4px 6px 8px blue;
+  background-color: greenyellow;
+  text-transform: uppercase;
+  text-indent: 40%;
+  transform: rotateX(360deg);
+}
+#Geography {
+  color: greenyellow;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: underline;
+  text-transform: uppercase;
+  background-color: orange;
+  text-shadow: 1px 2px 3px white;
+  box-shadow: 0.5px 1px 1.5px blue;
+}
