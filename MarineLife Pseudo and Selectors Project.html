@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-image: url("https://www.travelzoo.com/images/blog/2019/12/9/iStock-629446990.jpg?width=382&spr=3");
+        background-size: cover;
+      }
+      h1 {
+        text-decoration: none;
+        color: blue;
+        background-color: silver;
+        letter-spacing: 3px;
+        border: solid;
+        font-family: "Courier New", Courier, monospace;
+      }
+      h1 + p {
+        letter-spacing: 1px;
+        background-color: lightblue;
+        text-decoration: none;
+        padding: 5px;
+        margin: 30px;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 30px;
+      }
+      ul > li {
+        font-size: 30px;
+        color: white;
+        font-weight: bolder;
+      }
+      ul li:nth-child(1)::before {
+        content: "🐢";
+      }
+      ul li:nth-child(2)::before {
+        content: "🦈";
+      }
+      ul li:nth-child(3)::before {
+        content: "🐟";
+      }
+      ul li:nth-child(4)::before {
+        content: "🐳";
+      }
+      ul > li:hover {
+        color: purple;
+      }
+      h1 + p::first-letter {
+        color: blueviolet;
+      }
+      img {
+        object-fit: cover;
+        margin: 30px;
+        cursor: grab;
+      }
+      a:hover {
+        color: brown;
+      }
+      a {
+        font-size: 30px;
+        text-decoration: none;
+      }
+      figcaption {
+        font-weight: bold;
+        color: beige;
+        padding: 20px;
+        font-size: 30px;
+        font-family: "Courier New", Courier, monospace;
+      }
+    </style>
+    <title>Marine Explorers Club</title>
+  </head>
+  <body>
+    <header>
+      <h1><center>Welcome to the Marine Explorer's Club!</center></h1>
+      <p>
+        The Marine Explorer's club allows people with a passion for marine life
+        and water to experience their fantasies in their fullest, as we have
+        many clubs and animals you can look at to fulfil your desires.
+      </p>
+    </header>
+    <main>
+      <section>
+        <ul>
+          <li>Turtles</li>
+          <li>Sharks</li>
+          <li>Fish</li>
+          <li>Whales</li>
+        </ul>
+      </section>
+      <figure>
+        <img
+          src="https://static.vecteezy.com/system/resources/previews/029/854/266/non_2x/shark-high-quality-logo-illustration-ideal-for-t-shirt-graphic-vector.jpg"
+          alt="Picture of a Black Shark"
+        />
+      </figure>
+      <figcaption>Black Shark Picture</figcaption>
+      <section>
+        <a href="#">Join Our Mission</a><br />
+        <a href="#">Get you membership now</a><br />
+        <a href="#">Click here for new ideas</a><br />
+      </section>
+    </main>
+  </body>
+</html>
