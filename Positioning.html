@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div.absolute {
+        position: absolute;
+        left: 50px;
+        border: 3px solid blue;
+      }
+      div.relative {
+        position: relative;
+        left: 100px;
+        border: 3px solid #73ad21;
+      }
+      div.fixed {
+        position: fixed;
+        top: 0;
+        right: 20px;
+        width: 300px;
+        border: 3px solid #73ad21;
+      }
+      div.sticky {
+        position: sticky;
+        top: 50px;
+        left: 20px;
+        width: 100px;
+        border: 3px solid #73ad21;
+      }
+      .Donald {
+        position: absolute;
+        bottom: 770px;
+        font-weight: bold;
+        color: white;
+      }
+    </style>
+    <title>Positioning in CSS</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="Opacity.html">Opacity</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div></div>
+    <div class="absolute">
+      <br />
+      <p>Absolute</p>
+    </div>
+    <div class="fixed">
+      <br />
+      <p>Fixed</p>
+    </div>
+    <div class="sticky">
+      <p>sticky</p>
+    </div>
+    <div class="relative">
+      <p>relative</p>
+    </div>
+    <br />
+    <div class="image">
+      <img
+        src="https://www.pewresearch.org/wp-content/uploads/2023/07/SR_23.07.20_PoliticalLeadersFavorability_feature-jpg.webp?w=640"
+        alt="Donald Trump"
+        width="600px"
+        height="400px"
+      />
+      <div class="Donald">
+        <p>Donald Trump is cool</p>
+      </div>
+    </div>
+  </body>
+</html>
