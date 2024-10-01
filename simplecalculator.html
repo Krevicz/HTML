@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid bg-success">
+      <div class="container">
+        <center>
+          <u
+            ><mark
+              ><h1 style="font-style: italic; font-weight: bold">
+                Simple Calculator
+              </h1></mark
+            ></u
+          >
+        </center>
+      </div>
+    </div>
+    <div class="container">
+      <p
+        style="
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          background-color: gray;
+        "
+      >
+        <center>
+          The reason you would want to use a calculator is to correctly make
+          quick mathematical calculations at the press of a few buttons.
+        </center>
+      </p>
+    </div>
+    <div class="container-fluid mt-3 text-center">
+      <h2 style="color: blue">Mathematical Operations</h2>
+      <button type="button" class="btn btn-success">Addition</button>
+      <button type="button" class="btn btn-primary">Subtraction</button>
+      <button type="button" class="btn btn-secondary">Multiplication</button>
+      <button type="button" class="btn btn-danger">Division</button>
+      <button type="button" class="btn btn-warning">Modulo</button>
+    </div>
+    <div class="contianer">
+      <h1 style="text-decoration: underline; color: brown; text-align: center">
+        Lets do some maths!
+      </h1>
+    </div>
+    <br />
+    <center>
+      <span id="add"></span><br />
+      <span id="subtract"></span><br />
+      <span id="multiply"></span><br />
+      <span id="divide"></span><br />
+      <span id="modulo"></span><br />
+    </center>
+    <script>
+      var num1 = 10;
+      var num2 = 5;
+      var num3 = 6;
+      var num4 = 15;
+      var add = num1 + num2;
+      var subtract = num1 - num2;
+      var multiply = num3 * num4;
+      var divide = num1 / num2;
+      var modulo = num4 % num3;
+      document.getElementById("add").innerHTML =
+        num1 + " + " + num2 + " = " + add;
+      document.getElementById("subtract").innerHTML =
+        num1 + " - " + num2 + " = " + subtract;
+      document.getElementById("multiply").innerHTML =
+        num3 + " * " + num4 + " = " + multiply;
+      document.getElementById("divide").innerHTML =
+        num1 + " / " + num2 + " = " + divide;
+      document.getElementById("modulo").innerHTML =
+        num4 + " % " + num3 + " = " + modulo;
+    </script>
+  </body>
+</html>
