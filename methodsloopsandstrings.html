@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Methods, Loops, and Strings</title>
+  </head>
+  <body>
+    <center><h1>Methods Loops and Strings</h1></center>
+    <p>Basic Methods</p>
+    <p id="day"></p>
+    <script>
+      // Methods
+      var str = "AmAzInG";
+      document.write(str.toUpperCase());
+      document.write("<br>");
+      document.write(str.toLowerCase());
+      document.write("<br>");
+      document.write(str.startsWith("i"));
+      document.write("<br>");
+
+      var str1 = "I know all about methods";
+      var patt = new RegExp("a");
+      var res = patt.test(str1);
+      document.write(res);
+      document.write("<br>");
+
+      //Arrays and Loops
+      var fruits = [
+        "Apple",
+        "Banana",
+        "Mango",
+        "Grapes",
+        "Watermelon",
+        "Jack Fruit",
+      ];
+      for (var i = 0; i < fruits.length; i++) {
+        var text = fruits[i] + "<br>";
+        document.write(text);
+      }
+
+      //Switch
+      var day;
+      switch (new Date().getDay()) {
+        case 0:
+          day = "Sunday";
+          break;
+        case 1:
+          day = "Monday";
+          break;
+        case 2:
+          day = "Tuesday";
+          break;
+        case 3:
+          day = "Wednesday";
+          break;
+        case 4:
+          day = "Thursday";
+          break;
+        case 5:
+          day = "Friday";
+          break;
+        case 6:
+          day = "Saturday";
+          break;
+      }
+      document.getElementById("day").innerHTML = "Today is " + day;
+    </script>
+  </body>
+</html>
