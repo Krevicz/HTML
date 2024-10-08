@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Multiplication Functions</title>
+  </head>
+  <body>
+    <center><h1>Simple Multiplication Functions</h1></center>
+    <p>Simple Multiplication Functions</p>
+    <p id="result"></p>
+    <p id="resultt"></p>
+    <p id="resulttt"></p>
+    <p id="resultttt"></p>
+    <script>
+      // Functions
+      function multiply(num1, num2) {
+        return num1 * num2;
+      }
+      document.getElementById("result").innerHTML = multiply(5, 10);
+
+      function multiplyy(a, b) {
+        return a * b;
+      }
+
+      document.getElementById("resultt").innerHTML = multiplyy(10, 20);
+
+      function multiplyyy(num3, num4) {
+        if (num3 == 0 || num4 == 0) {
+          return "Multiplying by zero always returns zero, so the answer is zero.";
+        } else {
+          return num3 * num4;
+        }
+      }
+      document.getElementById("resulttt").innerHTML = multiplyyy(0, 19);
+      document.getElementById("resultttt").innerHTML = multiplyyy(10, 50);
+    </script>
+  </body>
+</html>
