@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects in Java Script</title>
+  </head>
+  <body>
+    <h1><center>OBJECTS IN JAVA SCRIPT</center></h1>
+    <p id="object1"></p>
+    <p id="maxx"></p>
+    <script>
+      var person = {
+        firstName: "James'",
+        lastName: "Bond",
+      };
+      document.getElementById("object1").innerHTML =
+        person.firstName + " last name is " + person.lastName;
+
+      var math = Math.abs(-14.5);
+      document.write(math);
+      document.write("<br>");
+      var math1 = Math.acos(1);
+      document.write(math1);
+      document.write("<br>");
+      var math2 = Math.asin(0);
+      document.write(math2);
+      document.write("<br>");
+      var math3 = Math.atan(0);
+      document.write(math3);
+
+      function findMax() {
+        var max = 0;
+        for (var i = 0; i < arguments.length; i++) {
+          if (arguments[i] > max) {
+            max = arguments[i];
+          }
+          return max;
+        }
+      }
+      document.getElementById("maxx").innerHTML = findMax(8, 4, 5, 6, 2, 10);
+    </script>
+  </body>
+</html>
