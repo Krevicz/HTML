@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      body {
+        background-color: lightblue;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: bold;
+        text-decoration: underline;
+        text-align: center;
+        font-size: 25px;
+      }
+      h1 {
+        color: blue;
+        text-shadow: 1px 2px 3px black;
+      }
+    </style>
+    <title>Arrays and Call Stacks</title>
+  </head>
+  <body>
+    <div class="contianer-fluid">
+      <div class="jumbotron jumbotron fluid bg-success">
+        <h1>Arrays and Call Stacks</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <figure>
+            <img
+              src="https://i.ytimg.com/vi/OMoxLUxW7Wc/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLB7rRABACTA5PxU5y5ZyIOyZELXMg"
+              alt="Arrays and Call Stacks"
+              width="500px"
+            />
+          </figure>
+        </div>
+        <div class="col">
+          <p id="demo"></p>
+          <p id="myjoin"></p>
+          <p id="firstpop"></p>
+          <p id="secondpop"></p>
+          <p id="callstack"></p>
+        </div>
+      </div>
+    </div>
+    <script>
+      var cars = ["Toyota", "Honda", "BMW"];
+      document.getElementById("demo").innerHTML =
+        cars[2] +
+        " " +
+        "is a car that is considered better than" +
+        " " +
+        cars[1];
+      var fruits = ["Banana", "Orange", "Apple", "Mango"];
+      document.getElementById("myjoin").innerHTML = fruits.join(",");
+      document.getElementById("firstpop").innerHTML = fruits.pop();
+      document.getElementById("secondpop").innerHTML = fruits;
+
+      function add(a, b) {
+        return a + b;
+      }
+
+      function average(a, b) {
+        return add(a, b) / 2;
+      }
+
+      let result = average(10, 20);
+      document.getElementById("callstack").innerHTML = result;
+    </script>
+  </body>
+</html>
