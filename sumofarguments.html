@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sum of Arguments Objects Using Trigonometric functions in JS</title>
+  </head>
+  <body>
+    <h1>CREATING OBJECTS AND USING Trigonometric functions in JS</h1>
+    <p id="1st function"></p>
+    <p id="2nd function"></p>
+    <p id="3rd function"></p>
+    <p id="4th function"></p>
+    <script>
+      var trigonometricfunctions = {
+        absoluteNumber: Math.abs(-11),
+        sinfunction: Math.asin(12),
+        cosfunction: Math.acos(13),
+        tanfunction: Math.atan(14),
+      };
+      document.getElementById("1st function").innerHTML =
+        "The absolute number of -11 is " +
+        trigonometricfunctions.absoluteNumber;
+      document.getElementById("2nd function").innerHTML =
+        "The tangent of 14 is " + trigonometricfunctions.tanfunction;
+      document.getElementbById("3rd function").innerHTML =
+        "The sin function of 12 is" + trigonometricfunctions.sinfunction;
+      document.getElementById("4th function").innerHTML =
+        "The cos function of 13 is" + trigonometricfunctions.cosfunction;
+    </script>
+  </body>
+</html>
