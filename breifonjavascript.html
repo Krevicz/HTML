@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brief on Java Script</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron bg-success">
+        <h1>BRIEF ON JAVASCRIPT</h1>
+      </div>
+    </div>
+    <h2 style="color: blue; text-decoration: underline">
+      <center>Data Types</center>
+    </h2>
+    <ul>
+      <li>String</li>
+      <li>Boolean</li>
+      <li>Integer</li>
+      <li>Float</li>
+      <li>Null</li>
+    </ul>
+    <table border="2px">
+      <tr>
+        <th>var</th>
+        <th>let</th>
+        <th>const</th>
+      </tr>
+      <tr>
+        <td>Accessible Throughout</td>
+        <td>Block-Specific</td>
+        <td>Value cannot be changed</td>
+      </tr>
+    </table>
+    <strong>Example</strong>
+    <pre>
+      <code>
+        var x = 10;
+        let y = 20;
+        const z = 30;
+      </code>
+      </pre>
+    <p id="varCommand"></p>
+    <p id="letCommand"></p>
+    <p id="constCommand"></p>
+    <script>
+      var x = 10;
+      document.getElementById("varCommand").innerHTML =
+        "The value stored in the variable is" + " " + x;
+      {
+        let x = 20;
+        document.getElementById("letCommand").innerHTML =
+          "The value stored in the let is" + " " + x;
+        const y = 20;
+        document.getElementById("constCommand").innerHTML =
+          "The value stored in the const is" + " " + y;
+      }
+    </script>
+  </body>
+</html>

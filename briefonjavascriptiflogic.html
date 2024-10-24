@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IF LOGIC</title>
+  </head>
+  <body>
+    <jumbotron style="background-color: brown; color: red">
+      <center>
+        <h1>IF LOGIC</h1>
+      </center>
+    </jumbotron>
+    <button onclick="myFunction()">Click me to see the date/time!</button>
+    <p id="times"></p>
+    <script>
+      function myFunction() {
+        time = new Date().getHours();
+        var greeting1 = "Good Morning!";
+        var greeting2 = "Good Afternoon!";
+        var greeting3 = "Good Evening!";
+        var greeting4 = "Good Night!";
+        if (time < 12) {
+          document.getElementById("times").innerHTML = greeting1;
+        } else if (time < 16) {
+          document.getElementById("times").innerHTML = greeting2;
+        } else if (time < 18) {
+          document.getElementById("times").innerHTML = greeting3;
+        } else {
+          document.getElementById("times").innerHTML = greeting4;
+        }
+      }
+    </script>
+  </body>
+</html>
