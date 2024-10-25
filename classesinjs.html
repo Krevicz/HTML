@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Classes in JavaScript</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <p id="students1"></p>
+    <p id="student2"></p>
+    <p id="details"></p>
+    <script>
+      class student {
+        constructor(name, year) {
+          this.name = name;
+          this.year = year;
+        }
+        static age() {
+          let date = new Date();
+          return date.getFullYear() - this.year;
+        }
+      }
+      let student1 = new student("John", 2010);
+      document.getElementById("students1").innerHTML =
+        "My name is " +
+        student1.name +
+        " and I am " +
+        student.age() +
+        " years old.";
+
+      class car {
+        constructor(brand) {
+          this.carname = brand;
+        }
+        present() {
+          return "I have a " + this.carname;
+        }
+      }
+      class Model extends car {
+        constructor(brand, mod) {
+          super(brand);
+          this.model = mod;
+        }
+        show() {
+          return this.present() + ", it is a " + this.model;
+        }
+      }
+      let Mycar = new Model("Ford", "Mustang");
+      document.getElementById("student2").innerHTML = Mycar.show();
+    </script>
+  </body>
+</html>
