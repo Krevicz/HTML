@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sorting</title>
+  </head>
+  <body>
+    <button onclick="ascending()">Ascending</button>
+    <button onclick="descending()">Descending</button>
+    <p id="result"></p>
+    <p id="value"></p>
+    <p id="product"></p>
+    <script>
+      var points = [40, 100, 50, 60, 5];
+      document.getElementById("result").innerHTML = points;
+      function ascending() {
+        points.sort(function (a, b) {
+          return a - b;
+        });
+        document.getElementById("result").innerHTML = points;
+      }
+      function descending() {
+        points.sort(function (a, b) {
+          return b - a;
+        });
+        document.getElementById("result").innerHTML = points;
+      }
+      var numbers = [28, 10, 7, 19, 20];
+      function myFunction(num) {
+        return num * 10;
+      }
+      var newArray = numbers.map(myFunction);
+      document.getElementById("value").innerHTML = newArray;
+      //Eval function
+      var name = "12+13-100*15/6";
+      var answer = eval(name);
+      document.getElementById("product").innerHTML = answer;
+    </script>
+  </body>
+</html>
