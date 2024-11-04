@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: brown;
+        font-weight: bold;
+        font-family: "Courier New", Courier, monospace;
+        font-size: large;
+      }
+      h1 {
+        text-decoration: underline;
+        text-align: center;
+      }
+    </style>
+    <title>Search and Replace function methods</title>
+  </head>
+  <body>
+    <h1>
+      <center>
+        SEARCH AND REPLACE AND CONVERT INTEGER TO STRING AND ERROR HANDLING
+      </center>
+    </h1>
+    <p id="search-result"></p>
+    <p id="replace-result"></p>
+    <p id="String"></p>
+    <p id="errorMessage"></p>
+    <p id="arrow"></p>
+    <script>
+      var str = "hello how are  in your location today";
+      var search_string = str.search("young");
+      var txt = str.replace("how are", "what is the time");
+      var x = 70;
+      var y = 90;
+      document.getElementById("search-result").innerHTML = search_string;
+      document.getElementById("replace-result").innerHTML = txt;
+      document.getElementById("String").innerHTML = String(x) + String(y);
+      function addalert(time) {
+        document.getElementById("errorMessage").innerHTML =
+          "this is the message " + time;
+      }
+      try {
+        addalert("What is the time?");
+      } catch (err) {
+        document.getElementById("errorMessage").innerHTML = err.message;
+      }
+      add = (a, b) => a + b;
+      document.getElementById("arrow").innerHTML = add(70, 50);
+    </script>
+  </body>
+</html>
